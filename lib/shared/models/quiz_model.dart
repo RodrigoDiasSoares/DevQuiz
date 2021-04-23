@@ -30,12 +30,12 @@ class QuizModel {
   final Level level;
 
   QuizModel({
-    required this.questions,
     required this.title,
+    required this.questions,
     this.questionAnswered = 0,
     required this.imagem,
     required this.level,
-  }) : assert(questions.length > 0);
+  });
 
   Map<String, dynamic> toMap() {
     return {
